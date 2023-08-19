@@ -1,0 +1,1 @@
+# this program gets a sentens or ... and makes it uppercase by using function

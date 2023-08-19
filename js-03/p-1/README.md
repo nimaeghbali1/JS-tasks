@@ -1,0 +1,1 @@
+# this program works like a simple calculator by function

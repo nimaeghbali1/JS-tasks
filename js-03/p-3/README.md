@@ -1,0 +1,1 @@
+# this program works by function that gets 5 numbers and gives the average if average were under 12 it notice

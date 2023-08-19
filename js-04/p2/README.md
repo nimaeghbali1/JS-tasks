@@ -1,0 +1,1 @@
+# this prgoram searches for a especial word that gets from user in the sentence and tell user if it exists in the sentence or not

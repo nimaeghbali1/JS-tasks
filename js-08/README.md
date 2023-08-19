@@ -1,0 +1,1 @@
+# this program works by tailwind and type script that it has a form and when you fill it and press the button it shows the value that you filled.

@@ -1,0 +1,1 @@
+# this program gets two numbers from user and add them with each other then show the results in console . 

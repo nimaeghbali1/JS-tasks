@@ -1,0 +1,10 @@
+export const userName = document.querySelector("#user-name");
+export const userPhone = document.querySelector("#user-name");
+export const userStorage = document.querySelector("#user-name");
+export const addContactBtn = document.querySelector("#submit-button");
+export const closeContactBtn = document.querySelector("#close-button");
+export const showContactBtn = document.querySelector("#show-button");
+export const showDrawer = document.querySelector("#contact-list-drawer");
+export const contactListElement = document.querySelector("#contact-list");
+export const contactList = [];
+//# sourceMappingURL=importer.js.map

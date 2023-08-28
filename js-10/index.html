@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Nima-Eghbali">
+        <title>js-10</title>
+        <link rel="stylesheet" href="dist/output.css">
+    </head>
+    <body> 
+        <main class="container m-auto">
+            <form>
+    
+                <div class="mt-10  w-1/2">
+                  <label for="user-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
+                  <input type="text" id="user-name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Name" required>
+                </div>
+                <div class="mt-6 w-1/2">
+                  <label for="user-phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone Number</label>
+                  <input type="text" id="user-phone" class=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Phone Number" required>
+                </div>
+    
+    
+                <div class="flex w-1/2 justify-between mt-6">
+                    <div class="flex items-center mr-4">
+                        <input id="user-SIM" type="radio" value="SIM" name="inline-radio-group" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="user-SIM" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">SIM</label>
+                    </div>
+                    <div class="flex items-center mr-4">
+                        <input id="user-device" type="radio" value="Device" name="inline-radio-group" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="user-device" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Device</label>
+                    </div>
+                </div>            
+                <div class="flex mt-6 w-1/2 justify-center">
+                    <div class="flex mb-6 w-1/2">
+                        <button type="submit" id="submit-button" class="text-white self-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to list</button>
+                    
+                    </div>
+                
+                    <div class="text-center">
+                        <button id="show-button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" type="button" data-drawer-target="drawer-bottom-example" data-drawer-show="drawer-bottom-example" data-drawer-placement="bottom" aria-controls="drawer-bottom-example">
+                        Show bottom drawer
+                        </button>
+                    </div>
+                </div>
+     
+                <!-- drawer component -->
+                <div id="contact-list-drawer" class="fixed  hidden bottom-0 left-0 right-0 z-40 w-full p-4 overflow-y-scroll h-[140px] transition-transform bg-blue-100 dark:bg-gray-800 transform-none" tabindex="-1" aria-labelledby="drawer-bottom-label">
+                    <h5 id="drawer-bottom-label" class="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400"><svg class="w-4 h-4 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+                    </svg>Contact info</h5>
+                    <button id="close-button" type="button" data-drawer-hide="drawer-bottom-example" aria-controls="drawer-bottom-example" class="righ-0 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 top-2.5 right-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white" >
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                    </button>
+                    <ul id="contact-list" class="flex flex-col list-none">
+                    </ul>
+                </div>
+     
+                </div>
+            
+            </form>
+        </main>
+    </body>
+    
+    <script type="module" src="./dist/index.js"></script>
+</html>
